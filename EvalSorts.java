@@ -45,21 +45,7 @@ public class EvalSorts {
 
 		alphabet = readCharacterOrdering(args[0]);
 		comp = new LexiconImpl(alphabet);
-		wordList = readWordsFile(args[1], comp);
-		//TODO
-		/*
-		 * 
-		 *      Here you should add code that extracts the file names from the args array,
-		 *      opens and reads the data from the files,constructs an instance of Lexicon from the character order file, 
-		 *      and then create an instance of this class (EvalSorts) to act as a configured
-		 *      instance of the application. After you have constructed the configured
-		 *      instance, you should start it running (see below). 
-		 *      
-		 *      
-		 *   
-		 *  
-		*/		
-		
+		wordList = readWordsFile(args[1], comp);		
 
 		//configure an instance of the app
 		theApp = new EvalSorts(comp, wordList, kNumberOfWordsToSort);
