@@ -69,7 +69,14 @@ public class QuickSort extends SorterWithStatistics {
 
 	/** Partition the array list[first..last] */
 	
-	
+      /**
+       * Partition the array list[first..last]
+       * @param list
+       * @param first
+       * @param last
+       * @param comp
+       * @return
+       */
 	private int partition(String[] list, int first, int last, Comparator<String> comp)
 	{
 		String pivot = list[first]; // Choose the first element as the pivot
